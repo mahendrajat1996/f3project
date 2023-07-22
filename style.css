@@ -1,0 +1,105 @@
+/* CSS */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2;
+  }
+  .container {
+    width: 800px;
+    height: 130px;
+    background-color: #1d1d23;
+    border: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Hide the default spinner for Firefox */
+  .timer-input-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none;
+  }
+  
+  .timer-input-section input {
+    margin-right: 10px;
+    border: none;
+    outline: none;
+  }
+  .timer-input-section-middle {
+    width: 309px;
+    height: 56px;
+    margin-top: 40px;
+    margin-left: 80px;
+    left: 699px;
+  }
+  .timer-input-section button {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #f0f757;
+    cursor: pointer;
+  }
+  
+  .active-timers-display-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  
+  .timer {
+    width: 800px;
+    height: 130px;
+    background-color: #1d1d23;
+    border: none;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .stop-timer-btn {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #f0f757;
+    cursor: pointer;
+    margin-left: 140px;
+  }
+  .current-time-button {
+    margin-top: 30px;
+    width: 413px;
+    height: 60px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: #39393e;
+    color: white;
+    border: none;
+    font-weight: 500px;
+    font-size: 24px;
+  }
+  .timer-remaining {
+    font-size: 24px;
+    margin-right: 10px;
+    color: white;
+  }
+  
+  .timer-end-display {
+    width: 800px;
+    height: 130px;
+    background-color: #f0f757;
+    border: none;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    display: none;
+  }

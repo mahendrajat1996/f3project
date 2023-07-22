@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="timer-input-section">
+        <div style="margin-right: 20px">
+          <p style="color: white">Set Time :</p>
+        </div>
+        <div class="timer-input-section-middle">
+          <input type="number" id="hours" placeholder="HH:" min="0" max="59" />
+          <input
+            type="number"
+            id="minutes"
+            placeholder="MM:"
+            min="0"
+            max="59"
+          />
+          <input
+            type="number"
+            id="seconds"
+            placeholder="SS:"
+            min="0"
+            max="59"
+          />
+        </div>
+
+        <button id="startTimerBtn">Start Timer</button>
+      </div>
+    </div>
+    <div>
+      <button class="current-time-button">Current Timers</button>
+    </div>
+    <div id="para"><p>You have no timers currently!</p></div>
+    <div class="active-timers-display-section" id="activeTimersDisplay">
+      <!-- Timer elements will be dynamically added here -->
+    </div>
+
+    <div class="timer-end-display" id="timerEndDisplay">
+      <!-- Timer end display elements will be shown here -->
+    </div>
+
+    <audio id="alertSound">
+      <source src="./alert.mp3/alert.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
